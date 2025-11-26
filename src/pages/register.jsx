@@ -48,7 +48,7 @@ function Register() {
 
   return (
     <>
-      <div className="w-full flex items-center justify-center min-h-screen bg-gradient-to-br from-green-100 via-white to-green-200">
+      <div className="w-full flex items-center justify-center min-h-screen bg-gradient-to-br from-purple-100 via-white to-purple-200">
         <div className="w-full max-w-md bg-white rounded-2xl shadow-lg p-8">
           <h2 className="text-2xl font-bold text-center text-gray-800 mb-6">
             Buat Akun Baru
@@ -63,7 +63,7 @@ function Register() {
               <input
                 type="text"
                 {...register("fullname")}
-                className="w-full border border-gray-300 p-2 rounded-lg focus:ring-2 focus:ring-green-400 focus:outline-none"
+                className="w-full border border-gray-300 p-2 rounded-lg focus:ring-2 focus:ring-purple-400 focus:outline-none"
                 placeholder="Masukkan nama lengkap"
               />
               {errors.fullname && (
@@ -81,7 +81,7 @@ function Register() {
               <input
                 type="email"
                 {...register("email")}
-                className="w-full border border-gray-300 p-2 rounded-lg focus:ring-2 focus:ring-green-400 focus:outline-none"
+                className="w-full border border-gray-300 p-2 rounded-lg focus:ring-2 focus:ring-purple-400 focus:outline-none"
                 placeholder="Masukkan email"
               />
               {errors.email && (
@@ -99,7 +99,7 @@ function Register() {
               <input
                 type="password"
                 {...register("password")}
-                className="w-full border border-gray-300 p-2 rounded-lg focus:ring-2 focus:ring-green-400 focus:outline-none"
+                className="w-full border border-gray-300 p-2 rounded-lg focus:ring-2 focus:ring-purple-400 focus:outline-none"
                 placeholder="Masukkan password"
               />
               {errors.password && (
@@ -117,7 +117,7 @@ function Register() {
               <input
                 type="password"
                 {...register("confirmPassword")}
-                className="w-full border border-gray-300 p-2 rounded-lg focus:ring-2 focus:ring-green-400 focus:outline-none"
+                className="w-full border border-gray-300 p-2 rounded-lg focus:ring-2 focus:ring-purple-400 focus:outline-none"
                 placeholder="Ulangi password"
               />
               {errors.confirmPassword && (
@@ -135,7 +135,7 @@ function Register() {
               <input
                 type="number"
                 {...register("age")}
-                className="w-full border border-gray-300 p-2 rounded-lg focus:ring-2 focus:ring-green-400 focus:outline-none"
+                className="w-full border border-gray-300 p-2 rounded-lg focus:ring-2 focus:ring-purple-400 focus:outline-none"
                 placeholder="Masukkan umur"
               />
               {errors.age && (
@@ -148,7 +148,7 @@ function Register() {
             {/* Tombol Register */}
             <button
               type="submit"
-              className="w-full bg-green-500 hover:bg-green-600 text-white font-medium py-2 px-4 rounded-lg transition"
+              className="w-full bg-purple-500 hover:bg-purple-600 text-white font-medium py-2 px-4 rounded-lg transition"
             >
               Register
             </button>
@@ -159,7 +159,7 @@ function Register() {
             Sudah punya akun?{" "}
             <Link
               to="/"
-              className="text-green-500 hover:text-green-600 font-medium"
+              className="text-purple-500 hover:text-purple-600 font-medium"
             >
               Login di sini
             </Link>

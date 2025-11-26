@@ -34,7 +34,7 @@ function Login() {
 
   return (
     <>
-      <div className="w-full flex items-center justify-center min-h-screen bg-gradient-to-br from-green-100 via-white to-green-200">
+      <div className="w-full flex items-center justify-center min-h-screen bg-gradient-to-br from-blue-100 via-white to-blue-200">
         <div className="w-full max-w-md bg-white rounded-2xl shadow-lg p-8">
           <h2 className="text-2xl font-bold text-center text-gray-800 mb-6">
             Login ke Akun Anda
@@ -49,7 +49,7 @@ function Login() {
               <input
                 type="text"
                 {...register("identifier")}
-                className="w-full border border-gray-300 p-2 rounded-lg focus:ring-2 focus:ring-green-400 focus:outline-none"
+                className="w-full border border-gray-300 p-2 rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none"
                 placeholder="Masukkan username atau email"
               />
               {errors.identifier && (
@@ -67,7 +67,7 @@ function Login() {
               <input
                 type="password"
                 {...register("password")}
-                className="w-full border border-gray-300 p-2 rounded-lg focus:ring-2 focus:ring-green-400 focus:outline-none"
+                className="w-full border border-gray-300 p-2 rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none"
                 placeholder="Masukkan password"
               />
               {errors.password && (
@@ -80,7 +80,7 @@ function Login() {
             {/* Tombol Login */}
             <button
               type="submit"
-              className="w-full bg-green-500 hover:bg-green-600 text-white font-medium py-2 px-4 rounded-lg transition"
+              className="w-full bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-lg transition"
             >
               Login
             </button>
@@ -91,7 +91,7 @@ function Login() {
             Belum punya akun?{" "}
             <Link
               to="/register"
-              className="text-green-500 hover:text-green-600 font-medium"
+              className="text-blue-500 hover:text-blue-600 font-medium"
             >
               Daftar di sini
             </Link>
